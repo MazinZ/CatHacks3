@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+    <title>CatHacks 3</title>
+    <head>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="app/js/external/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="app/dist/main.css">
+        <!-- END Stylesheets -->
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Apply">Apply</a></li>
+                        <li><a href="#Sponsor">Sponsor</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="About"> 
+                <div class="about-box">
+                    <h2>The largest hackathon in Kentucky,</h2>
+                    CatHacks is.. ipsum dolor sit amet, consectetur adipiscing elit. Donec eu metus at eros tempor pharetra. Proin id dictum nulla. Fusce porttitor justo id purus mattis euismod. Suspendisse tincidunt porttitor consequat. Sed laoreet vestibulum augue quis varius. Suspendisse fermentum leo non mi condimentum, non maximus lorem feugiat. Aenean suscipit sem non auctor hendrerit. Suspendisse id condimentum tellus. Nunc ut
+                </div>
+                <div class = "video-box-container">
+                    <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/b-jWjoPV__A" frameborder="0" allowfullscreen></iframe> </div>
+                </div>
+        </section>
+        <section id="Apply"> 
+            <div class="mentor-box">
+                <h2> Want to be a mentor at CatHacks? </h2>
+                <p> Blurb about why mentors are important, ipsum dolor sit amet, consectetur adipiscing elit. Donec eu metus at eros tempor pharetra. Proin id dictum nulla. Fusce porttitor justo id purus mattis euismod. If you’re interested in mentoring at CatHacks III, email us at mentor@cathacks.com </p>
+            </div>
+            <div class="text-box-parent">
+                <div class="text-box">
+                    <p>Blurb about applying, everyone should apply regardless of skill level etc. ipsum dolor sit amet, consectetur adipiscing elit. Donec eu metus at eros tempor pharetra. Proin id dictum nulla. Fusce porttitor justo id purus mattis euismod. Suspendisse tincidunt porttitor consequat. Sed laoreet vestibulum augue quis varius. Suspendisse fermentum leo non mi condimentum, non maximus lorem feugiat. </p>
+                    <button class="main-btn"> Apply </button> <br>
+                    <p style="font-size:12px; font-weight:400;">If you’re a UK student, click <a href="#">here</a> to apply</p>
+                </div>
+            </div>
+        </section>
+        <section id="Sponsor"> 
+            <div class="sponsors-container">
+                <h3>Here’s a look at our sponsors for CatHacks II</h3>
+                <div class="sponsors-box">
+                </div>
+            </div>
+            <div class="text-box-parent">
+                <div class="text-box">
+                    <h1> Sponsor </h1>
+                    <p>Blurb about sponsorship blah, ipsum dolor sit amet, consectetur adipiscing elit. Donec eu metus at eros tempor pharetra. Proin id dictum nulla. Fusce porttitor justo id purus mattis euismod. If you’re interested in mentoring at CatHacks III, email us at mentor@cathacks.com </p>
+                    <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks III?</p>
+                    <button class="main-btn"> Sponsor </button> <br>
+                </div>
+            </div>
+            <div class="footer"> &copy; CatHacks 2016. CatHacks is a <a href="#">UK ACM</a>  and <a href="#">IEEE</a> Event. </div>
+        </section>
+        <!-- Scripts -->
+        <script src="app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="app/js/external/jquery.backstretch.min.js"></script>
+        <script src="app/js/main.js"></script>
+        <script>
+            $("#About").backstretch("app/img/aboutbg.png");
+            $("#Apply").backstretch("app/img/applybg.png");
+            $("#Sponsor").backstretch("app/img/sponsorbg.png");
+        </script>
+        <!-- END Scripts -->
+    </body>
+</html>
