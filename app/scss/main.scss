@@ -30,6 +30,13 @@ html, body{
     }
 }
 
+#navbar {
+    display:none;
+    height: 50px;
+    min-height:0;
+
+}
+
 .navbar-default .navbar-collapse{
     background-color:#fff;
     height:50px !important;
@@ -106,6 +113,45 @@ a:hover{
 }
 
 button:focus {outline:0;}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#Home {
+    background-color:#444;
+    .logo {
+        width: 668px;
+        top:50%;
+        /*transform: translateY(-50%);
+        margin-left:150px;
+        position:absolute;*/
+    }
+    .home-btns{
+        margin-top:47px;
+        margin-left:20px;
+    }
+    .right-box{
+        position:absolute;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+        margin-right:0px;
+    }
+    .main-btn {
+        margin-right: 17px;
+        border-color: #cdcdcd;
+        color: #cdcdcd;
+    }
+    .main-btn:hover {
+        border-color: #fff;
+        background-color: #fff;
+        color: #969696;
+    }
+
+}
 
 #About {
     .about-box{

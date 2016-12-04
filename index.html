@@ -10,7 +10,7 @@
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -22,15 +22,20 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="#Home">Home <span class="sr-only">(current)</span></a></li>
                         <li><a href="#About">About</a></li>
                         <li><a href="#Apply">Apply</a></li>
                         <li><a href="#Sponsor">Sponsor</a></li>
-
                     </ul>
                 </div>
             </div>
         </nav>
+        <section id="Home" class="vertical-center">
+            <div class="container">
+                <img class="col-md-8 logo" src="app/img/logo.svg" />
+                <div class="col-md-8 home-btns"> <button href="#Apply" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div>
+            </div>
+        </section>
         <section id="About"> 
                 <div class="about-box">
                     <h2>The largest hackathon in Kentucky,</h2>
@@ -75,6 +80,7 @@
         <script src="app/js/external/jquery.backstretch.min.js"></script>
         <script src="app/js/main.js"></script>
         <script>
+            $("#Home").backstretch("app/img/applybg.png");
             $("#About").backstretch("app/img/aboutbg.png");
             $("#Apply").backstretch("app/img/applybg.png");
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
