@@ -194,7 +194,7 @@ button:focus {outline:0;}
 #Apply {
     .mentor-box {
         width:510px;
-        height:430px;
+        height:400px;
         background-color: #22787B;
         right:0;
         position:absolute;
@@ -268,6 +268,9 @@ button:focus {outline:0;}
         color: #C5C5C5;
         font-weight: 200;
         font-size:13px;
+    }
+    .main-btn{
+        width: 195px;
     }
     .main-btn:hover {
         background-color:#1D2430;
