@@ -32,8 +32,10 @@
         </nav>
         <section id="Home" class="vertical-center">
             <div class="container">
-                <img class="col-md-8 logo" src="app/img/logo.svg" />
-                <div class="col-md-8 home-btns"> <button href="#Apply" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div>
+                <div class="row">
+                    <img class="col-md-8 logo" src="app/img/logo.svg" />
+                    <div class="col-md-8 home-btns"> <button href="#Apply" class="main-btn"> Apply </button>  <button href="#Sponsor" class="main-btn"> Sponsor </button> </div>
+                </div>
             </div>
         </section>
         <section id="About">
@@ -49,46 +51,54 @@
                     <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/b-jWjoPV__A" frameborder="0" allowfullscreen></iframe> </div>
                 </div>
         </section>
-        <section id="Apply">
-            <div class="mentor-box">
-                <h2> Hardware </h2>
-                <p>Major League Hacking will be providing a Hardware Lab, so there will be tons of hardware to check out and use at the event! Arduinos, Oculus DK, Myo, Pebble, and Laptops are only some of the items that will be available.</p>
-                <p>(A valid driver's license is required to rent hardware.)</p>
-            </div>
-            <div class="text-box-parent">
-                <div class="text-box">
-                    <h1> Eligibility and Travel </h1>
-                    <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply! <br> At this time, we cannot promise travel reimbursement. If you require travel reimbursement to attend CatHacks, please mention this on your application. We will reach out to you with more information later.</p>
-                    <button class="main-btn"> Apply </button> <br>
-                    <p style="font-size:14px; font-weight:400;">If you're a UK student, <a href="#">click here to apply</a>.</p>
+        <section id="Apply" class="vertical-center">
+            <div class="container">
+                <div class="row">
+                    <div class="text-box-parent col-md-6">
+                        <div class="text-box">
+                            <h1> Eligibility and Travel </h1>
+                            <p>In order to attend CatHacks, you must be a student at a post-secondary university. We accept high school students on a case by case basis. Even if you don't have much experience, you should still apply! <br> At this time, we cannot promise travel reimbursement. If you require travel reimbursement to attend CatHacks, please mention this on your application. We will reach out to you with more information later.</p>
+                            <button class="main-btn"> Apply </button> <br>
+                            <p style="font-size:14px; font-weight:400;">If you're a UK student, <a href="#">click here to apply</a>.</p>
+                        </div>
+                    </div>
+                    <div class="mentor-box col-md-4 offset-md-2">
+                        <h2> Hardware </h2>
+                        <p>Major League Hacking will be providing a Hardware Lab, so there will be tons of hardware to check out and use at the event! Arduinos, Oculus DK, Myo, Pebble, and Laptops are only some of the items that will be available.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="Sponsor">
-            <div class="sponsors-container">
-                <h3>Here's a look at our sponsors for CatHacks II</h3>
-                <div class="sponsors-box">
-                </div>
-            </div>
-            <div class="text-box-parent">
-                <div class="text-box">
-                    <h1> Sponsor </h1>
-                    <p>CatHacks would not be possible without the support of our sponsors. These companies allow us to keep CatHacks a free and open event for our participants, who value the opportunity to network with industry leaders.</p>
-                    <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks III?</p>
-                    <button class="main-btn"> Sponsorship Packet </button> <br>
+        <section id="Sponsor" class="vertical-center">
+            <div class="container">
+                <div class="row">
+                    <div class="text-box-parent col-md-6">
+                        <div class="text-box">
+                            <h1> Sponsor </h1>
+                            <p>CatHacks would not be possible without the support of our sponsors. These companies allow us to keep CatHacks a free and open event for our participants, who value the opportunity to network with industry leaders.</p>
+                            <p style="font-size:14px; font-weight:400;">Interested in sponsoring CatHacks III?</p>
+                            <button class="main-btn"> Sponsorship Packet </button> <br>
+                        </div>
+                    </div>
+                    <div class="sponsors-container col-md-4 offset-md-2">
+                        <h3>Here's a look at our sponsors for CatHacks II</h3>
+                        <div class="sponsors-box">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer"> &copy; CatHacks 2016. CatHacks is a <a href="http://acm.cs.uky.edu">UK ACM</a>  and <a href="http://ieee.engineering.uky.edu">UK IEEE</a> event. </div>
         </section>
+
         <!-- Scripts -->
         <script src="app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="app/js/external/jquery.backstretch.min.js"></script>
         <script src="app/js/main.js"></script>
         <script>
-            $("#Home").backstretch("app/img/applybg.png");
+            $("#Home").backstretch("app/img/homebg.png");
             $("#About").backstretch("app/img/aboutbg.png");
-            $("#Apply").backstretch("app/img/applybg.png");
+            $("#Apply").backstretch("app/img/newapplybg.png");
             $("#Sponsor").backstretch("app/img/sponsorbg.png");
         </script>
         <!-- END Scripts -->
