@@ -78,6 +78,7 @@ section {
     min-height:100%;
     width:100%;
     overflow:hidden;
+    border-bottom: 2px #313131 solid;
 }
 
 h1 {
@@ -119,6 +120,13 @@ a:hover{
 }
 
 button:focus {outline:0;}
+
+::selection {
+  background: #717171; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #717171; /* Gecko Browsers */
+}
 
 .vertical-center {
   min-height: 100%;
