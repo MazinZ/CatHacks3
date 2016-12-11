@@ -13,7 +13,7 @@ $(function() {
         console.log(idName);
         $('html, body').animate({
             scrollTop: $(idName).offset().top - 50
-        }, 1000);
+        }, 600);
     });
 		
 });

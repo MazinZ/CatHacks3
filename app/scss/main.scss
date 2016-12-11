@@ -136,12 +136,12 @@ button:focus {outline:0;}
 #Home {
     background-color:#444;
     .logo {
-        width: 668px;
+        min-width: 668px;
         top:50%;
     }
     .home-btns{
         margin-top:47px;
-        margin-left:20px;
+        //margin-left:20px;
     }
     .right-box{
         position:absolute;
@@ -160,17 +160,22 @@ button:focus {outline:0;}
         background-color: #fff;
         color: #969696;
     }
+    @media (max-width: 991px) {
+        .logo {
+            min-width: 355px;
+        }
+    }
 
 }
 
 #About {
     .about-box{
         font-family:"Open Sans";
-        height:450px;
+       /* height:450px;
         width:652px;
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%);*/
         //padding:50px 80px 80px 80px;
         line-height:44px;
         font-weight:200;
@@ -199,6 +204,36 @@ button:focus {outline:0;}
         box-shadow: 4px 1px 10px 2px rgba(0,0,0,0.3);
         overflow:hidden;
         margin-right:30px;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    @media (max-width: 991px) {
+        .video-box-container {
+          right:auto;
+          padding:0;
+          position:static;
+          width:100%;
+          transform: none;
+          background-color: transparent;
+          height: 270px;
+        }
+        .video-container {
+            margin-right:auto;
+            margin-left:auto;
+            position:static;
+            top: 47px;
+            position: relative;
+            height: 157.5px;
+            width: 280px;
+        }
+        iframe {
+            height: 157.5px;
+            width: 280px;
+        }
     }
 }
 
@@ -257,8 +292,8 @@ button:focus {outline:0;}
     }
 
     .sp-container {
-        width:510px;
-        height:450px;
+        /*width:510px;
+        height:450px;*/
         right:-14%;
         /*transform: translateY(-50%);
         position:absolute;
@@ -322,6 +357,9 @@ button:focus {outline:0;}
         margin-top: 45px;
         font-size: 31px;
     }
+    h3 {
+        display: none;
+    }
     p {
         line-height: 2.5;
         font-size:13px;
@@ -332,5 +370,18 @@ button:focus {outline:0;}
         line-height: 0px;
         border-radius: 3px;
     }
+    .sp-box {
+        margin-top: 10px;
+    }
 
+}
+
+@media (max-width: 991px) {
+    .sp-container {
+        display: none;
+    }
+
+    .footer {
+        font-size: 9px;
+    }
 }
