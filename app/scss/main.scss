@@ -39,7 +39,6 @@ html, body{
 
 .navbar-default .navbar-collapse{
     background-color:#fff;
-    height:50px !important;
 }
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus, 
@@ -232,11 +231,20 @@ button:focus {outline:0;}
     a {
         text-decoration: underline;
     }
+
+
+    /* Media Queries */
+
+    @media (max-width: 991px) {
+        .mentor-box {
+          right:auto;
+        }
+    }
 }
 
 #Sponsor {
     .sp-box {
-        width:510px;
+        min-width:510px;
         min-height:430px;
         background-color: #1D2430;
         padding:50px 70px 70px 70px;
@@ -245,6 +253,7 @@ button:focus {outline:0;}
         background-image: url("../img/sponsors.svg");
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: auto auto;
     }
 
     .sp-container {
@@ -278,6 +287,15 @@ button:focus {outline:0;}
         background-color:#1D2430;
         border-color:#1D2430;
     }
+
+    /* Media Queries */
+
+    @media (max-width: 991px) {
+        .sp-container {
+          right:auto;
+          padding:0;
+        }
+    }
 }
 
 .footer {
@@ -291,12 +309,28 @@ button:focus {outline:0;}
     color: #C5C5C5;
     font-weight: 200;
     font-size:13px;
+    border-top: 1px #313131 solid;
 }
 
 // Media queries
 
-/*@media (min-width: 991px) {
-  .mentor-box {
-    right:auto;
-  }
-}*/
+
+
+@media (max-width: 991px) {
+    h1 {
+        margin-bottom: 10px;
+        margin-top: 45px;
+        font-size: 31px;
+    }
+    p {
+        line-height: 2.5;
+        font-size:13px;
+    }
+    .main-btn {
+        width: 98px;
+        height: 50px;
+        line-height: 0px;
+        border-radius: 3px;
+    }
+
+}
