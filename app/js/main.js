@@ -3,7 +3,7 @@ $(function() {
         if ($(this).scrollTop() > 1) {
             $('#navbar').css("display", "block");
         } else {
-            $('#navbar').css("display", "none");
+            $('#navbar').css("display", "block"); // Always display navbar for now.
         }
     });
     $("#navbar li").click(function(e) {
