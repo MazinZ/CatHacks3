@@ -391,3 +391,36 @@ button:focus {outline:0;}
         font-size: 9px;
     }
 }
+
+#Thank-you {
+    @extend #Home;
+    .thank-you {
+        height:300px;
+        right:0;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .main-btn{
+        border-color: #fff;
+        color: #fff;
+        width: 195px;
+    }
+    .main-btn:hover {
+        background-color:#1D2430;
+        border-color:#1D2430;
+        color: #fff;
+    }
+    @media (max-width: 991px) {
+    .thank-you {
+        margin-right:auto;
+        margin-left:auto;
+        position:relative;
+        width:300px;
+    }
+    .logo{
+        display:none;
+    }
+}
+
+}
