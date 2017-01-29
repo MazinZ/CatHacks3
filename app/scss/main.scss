@@ -136,10 +136,11 @@ button:focus {outline:0;}
 #Home {
     background-color:#444;
     .logo {
-        min-width: 100%;
+        //min-width: 100%;
         top:50%;
-        padding-left:10%;
-        max-width:668px;
+        //padding-left:10%;
+        //max-width:668px;
+        min-width:668px;
     }
     .home-btns{
         margin-top:47px;
@@ -162,9 +163,9 @@ button:focus {outline:0;}
         background-color: #fff;
         color: #969696;
     }
-    .container {
+    /*.container {
         width: inherit;
-    }
+    }*/
 
     @media (max-width: 991px) {
         .logo {
@@ -410,6 +411,9 @@ button:focus {outline:0;}
         background-color:#1D2430;
         border-color:#1D2430;
         color: #fff;
+    }
+    .container {
+        width: inherit;
     }
     @media (max-width: 991px) {
     .thank-you {
