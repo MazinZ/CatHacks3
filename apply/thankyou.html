@@ -16,11 +16,26 @@
                   <div class="col-md-8">
                       <img class="logo" src="../app/img/logo.svg" />
                   </div>
-                <div class="thank-you col-md-4">
-                    <h1>Thank You!</h1>
-                    <p>Your application was submitted successfully. <br> We'll be in touch soon.</p><br>
-                    <button class="main-btn" onclick="window.open('http://cathacks.cs.uky.edu/');">Return Home</button> <br>
+
+                  <div id="Before-resume">
+                      <div class="thank-you col-md-4">
+                          <h1>You're almost done!</h1>
+                          <p>Please submit your resume to to finish your application.</p><br>
+                          <a class="typeform-share" href="https://cathacks.typeform.com/to/mBecme" data-mode="1" target="_blank">
+                            <button id="Submit-btn" class="main-btn"> Submit Resume </button>
+                          </a>
+                      </div>
+                  </div>
+
+                <!-- This div remains hidden until they share resume -->
+                <div id="After-resume" class="hide-me">
+                    <div class="thank-you col-md-4">
+                        <h1>Thank you!</h1>
+                        <p>Your application is complete, we'll be in touch soon.</p><br>
+                          <button class="main-btn" onclick="window.open('http://cathacks.cs.uky.edu/','_self')"> Return Home </button>
+                    </div>
                 </div>
+
 
       </section>
 
@@ -32,6 +47,45 @@
       <script>
           $("#Thank-you").backstretch("../app/img/homebg.png");
       </script>
+
+      <!-- Script for embedding typeform in a popup window -->
+      <script>
+        (function(){
+          var qs,js,q,s,d=document,
+          gi=d.getElementById,
+          ce=d.createElement,
+          gt=d.getElementsByTagName,
+          id='typef_orm',
+          b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+          if(!gi.call(d,id)){
+            js=ce.call(d,'script');
+            js.id=id;
+            js.src=b+'share.js';
+            q=gt.call(d,'script')[0];
+            q.parentNode.insertBefore(js,q)
+          }
+          id=id+'_';
+          if(!gi.call(d,id)){
+            qs=ce.call(d,'link');
+            qs.rel='stylesheet';
+            qs.id=id;
+            qs.href=b+'share-button.css';
+            s=gt.call(d,'head')[0];
+            s.appendChild(qs,s)
+          }
+        })()
+      </script>
+
+      <!-- This replaces the Before-resume div with After-resume once they submit resume -->
+      <script>
+        $(function() {
+          $('#Submit-btn').click(function() {
+              $('#Before-resume').replaceWith($('#After-resume'));
+              $('#After-resume').removeClass('hide-me');
+          })
+        })
+      </script>
+
       <!-- END Scripts -->
 
     </body>

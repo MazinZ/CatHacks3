@@ -13,6 +13,14 @@ html, body{
 
 }
 
+.hide-me{
+  display: none;
+}
+
+.show-me {
+  display: block;
+}
+
 .navbar-nav {
     & > li {
         margin-left:93px;
