@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html>
+    <title>CatHacks 3</title>
+<head>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="../app/js/external/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../app/dist/main.css">
+        <!-- END Stylesheets -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <section id="Sponsor-info" class="vertical-center">
+          <div class="container">
+              <div class="row">
+
+                <div class="learn-more col-md-4">
+                    <h1>Learn More</h1>
+                    <button class="main-btn" onclick="window.open('http://cathacks.cs.uky.edu/app/pdf/sponsor-packet.pdf');">Sponsorship Packet</button> <br>
+                    <br><p style="font-size:14px; font-weight:400;"><a target="_blank" href="http://cathacks.cs.uky.edu/">Back to Main Page</a>.</p>
+                </div>
+
+                <div class="sponsor-form col-md-6">
+                  <h1>Interested in sponsoring?</h1>
+                  <!-- Change the width and height values to suit you best -->
+                  <div class="typeform-widget" data-url="https://cathacks.typeform.com/to/vtiYLQ" data-text="cat hacks-sponsor-form"></div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+      </section>
+
+      <!-- Scripts -->
+      <script src="../app/js/external/bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="../app/js/external/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../app/js/external/jquery.backstretch.min.js"></script>
+      <script src="../app/js/main.js"></script>
+      <script>
+          $("#Sponsor-info").backstretch("../app/img/sponsorbg.png");
+      </script>
+
+      <script>
+        (function(){
+          var qs,js,q,s,d=document,
+          gi=d.getElementById,
+          ce=d.createElement,
+          gt=d.getElementsByTagName,
+          id='typef_orm',
+          b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+          if(!gi.call(d,id)){
+            js=ce.call(d,'script');
+            js.id=id;
+            js.src=b+'widget.js';
+            q=gt.call(d,'script')[0];
+            q.parentNode.insertBefore(js,q)
+          }
+        })()
+      </script>
+
+
+
+      <!-- END Scripts -->
+
+    </body>
+</html>
