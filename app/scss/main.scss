@@ -74,6 +74,7 @@ html, body{
     border-radius: 2px;
     background:transparent;
     transition: all .3s ease;
+    font-family: "Montserrat";
 }
 
 .main-btn:hover {
@@ -184,6 +185,12 @@ button:focus {outline:0;}
 }
 
 #About {
+
+    .main-btn:hover {
+        background-color:#1D2430;
+        border-color:#1D2430;
+    }
+
     .about-box{
         font-family:"Open Sans";
        /* height:450px;
@@ -307,31 +314,16 @@ button:focus {outline:0;}
     }
 
     .sp-container {
-        /*width:510px;
-        height:450px;*/
         right:-14%;
-        /*transform: translateY(-50%);
-        position:absolute;
-        top:50%;
-        right:0;*/
-
         text-align: center;
     }
-    .text-box {
-        /*width:40%;
-        position: absolute;
-        top:50%;
-        transform: translateY(-50%);*/
-    }
     .text-box-parent {
-        //padding:40px;
         padding-left:10%;
         line-height:4;
-        //position:relative;
     }
 
     .main-btn{
-        width: 195px;
+        width: 230px;
     }
     .main-btn:hover {
         background-color:#1D2430;
